@@ -1,0 +1,35 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Code **/
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=360feff5-c145-40ba-ad02-4176f4beb05e");
+@font-face{
+    font-family:"Neue Plak W04 Wide Regular";
+    src:url("../fonts/4e3a2f57-fa7f-427b-b005-86bfc0c4c78d.eot?#iefix");
+    src:url("../fonts/4e3a2f57-fa7f-427b-b005-86bfc0c4c78d.eot?#iefix") format("eot"),url("../fonts/015f75df-2788-4c2d-97cb-0fed26cbe1d4.woff2") format("woff2"),url("../fonts/30bd78f0-7630-4446-8f51-e1757c1f0b99.woff") format("woff"),url("../fonts/7212f37b-1d49-4a8d-bba6-4af95054771d.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Neue Plak W01 Wide ExtraBlack";
+    src:url("../fonts/c17c3ddd-81a2-463a-b97e-5666b284cf05.eot?#iefix");
+    src:url("../fonts/c17c3ddd-81a2-463a-b97e-5666b284cf05.eot?#iefix") format("eot"),url("../fonts/3e9b0642-969c-4734-a046-c0f147ad7c09.woff2") format("woff2"),url("../fonts/7e677705-f71c-4184-a9de-2dffccce0bab.woff") format("woff"),url("../fonts/2287c984-a296-4f59-9286-fc3e48ded2aa.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Neue Plak W04 Wide ExtraBlack";
+    src:url("../fonts/ebb41053-1a71-4d25-b22c-e9aad758d5c9.eot?#iefix");
+    src:url("../fonts/ebb41053-1a71-4d25-b22c-e9aad758d5c9.eot?#iefix") format("eot"),url("../fonts/bb0043e5-4b34-4e2d-a9f2-184fde644d81.woff2") format("woff2"),url("../fonts/d47a61d1-906d-49bb-a31a-e2d14a0d2cca.woff") format("woff"),url("../fonts/e0bcb4fe-d0eb-4c65-b688-2432e44de201.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:'Neue Plak W01 Wide ExtraBlack';
+}    
+
+#footer-wrapper{
+    background-color: #84E489;
+}
