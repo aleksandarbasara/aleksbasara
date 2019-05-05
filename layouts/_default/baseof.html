@@ -5,21 +5,19 @@
     {{ $style := resources.Get "css/global.css"  | postCSS (dict "config" "./postcss.config.js")  | minify | fingerprint  }}
     <link rel="stylesheet" href="{{ $style.Permalink | safeCSS }}" integrity="{{ $style.Data.Integrity }}">
 </head>
-    <body class="font-sans m-0 antialiased bg-black ">
-        <div id="main" class="w-full">
-            {{ if .IsHome }}
-            <header class="p-6 h-screen px-64">
-                {{ partialCached "head/navigation.html" . }}
-                {{ partialCached "head/hero.html" . }}
-            </header>
-            {{ end }}
-            {{ block "main" . }}
-            <!-- The part of the page that begins to differ between templates -->
-            {{ end }}
-            {{ block "footer" . }}
-                {{ partialCached "footer/site-footer.html" . }}
-            {{ end }}
-        </div>
+    <body class="font-sans m-0 antialiased bg-black h-full">
+        {{ if .IsHome }}
+        <header class="p-6 h-screen lg:px-64">
+            {{ partialCached "head/navigation.html" . }}
+            {{ partialCached "head/hero.html" . }}
+        </header>
+        {{ end }}
+        {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+        {{ block "footer" . }}
+            {{ partialCached "footer/site-footer.html" . }}
+        {{ end }}
         {{ $global := resources.Get "js/index.js" }}
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2718334-58"></script>
