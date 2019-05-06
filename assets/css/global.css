@@ -28,7 +28,10 @@ body{
 a{
     color: #F3E4B6;
 }
-
+::selection{
+    background-color: #B40F23;
+    color: #F3E4B6;
+}
 h1 {
     color: #B40F23;
     font-family:'Neue Plak W01 Wide ExtraBlack';
